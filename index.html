@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exemplo de Página Acessível</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegação Acessível -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" title="Ir para a página inicial">Início</a></li>
+        <li><a href="#sobre" title="Ir para a seção sobre">Sobre</a></li>
+        <li><a href="#contato" title="Ir para a seção de contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section id="home">
+      <h1>Bem-vindo à nossa página acessível!</h1>
+      <p>Este é um exemplo de como criar uma página acessível para todos os usuários.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Nosso objetivo é garantir que a web seja acessível a todas as pessoas, independentemente das suas habilidades.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="#" method="POST" aria-labelledby="form-title">
+        <fieldset>
+          <legend id="form-title">Formulário de Contato</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Digite seu nome">
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="Digite seu e-mail">
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Digite sua mensagem"></textarea>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Exemplo de Página Acessível</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
